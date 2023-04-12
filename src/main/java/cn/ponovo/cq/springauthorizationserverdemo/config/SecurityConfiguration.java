@@ -80,7 +80,7 @@ public class SecurityConfiguration {
     RegisteredClientRepository registeredClientRepository(){
         RegisteredClient registeredClient = RegisteredClient.withId(UUID.randomUUID().toString())
                 .clientId("client")
-                .clientSecret("{noop}123456")
+                .clientSecret("$2a$10$MkJopbO.NaWOTI3GjGeIvunzjfiAYbWp8JvUG0BQ3N5yPRgScR.ci")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
                 .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)

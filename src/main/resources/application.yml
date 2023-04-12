@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: spring-auth-server
+  jpa:
+    database: mysql
+  datasource:
+    url: jdbc:mysql://192.168.6.201:3306/Ponovo
+    username: Ponovo
+    password: 2022pOnOvO)*@%
 
 eureka:
   instance:
